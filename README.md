@@ -9,17 +9,17 @@ npm i svelte-material-icons
 ```svelte
 <script>
 	import Check from "svelte-material-icons/Check.svelte";
-<script/>
+</script>
 
 <Check {color} {size} {width} {height} {viewBox} />
 ```
 
 ### Search Icons
-You can search icons at https://materialdesignicons.com/
+You can search icons at [materialdesignicons.com](https://materialdesignicons.com)
 
 Icon names are PascalCased from the original name in the site
 
-check-outline => CheckOutline.svelte
+**check-outline** converts to **CheckOutline.svelte**
 
 
 ### Icon Example
@@ -42,7 +42,7 @@ If you wrap the icon into other element set the **display** of the parent elemen
 
 
 ### Contribute
-This is a simple source to source compiler that transforms the svg files from https://github.com/Templarian/MaterialDesign to svelte components using cheerio
+This is a simple source to source compiler that transforms the svg files from https://github.com/Templarian/MaterialDesign to svelte components using [cheerio](https://cheerio.js.org)
 
 To develop you can do
 
