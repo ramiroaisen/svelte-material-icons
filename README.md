@@ -33,8 +33,8 @@ check-outline => CheckOutline.svelte
 </script>
 
 <svg {width} {height} {viewBox}>
-	<path d="..." fill={color} />
- </svg>
+  <path d="..." fill={color} />
+</svg>
 ```
 
 ### Notes
