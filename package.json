@@ -2,23 +2,22 @@
   "name": "svelte-material-icons-generator",
   "version": "1.0.0",
   "description": "Svelte Material Design Icons Generator",
-  "main": "index.js",
+  "main": "build.js",
   "scripts": {
     "build": "node build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Templarian/MaterialDesign.git"
+    "url": "git+https://github.com/ramiroaisen/svelte-material-icons.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Templarian/MaterialDesign/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Templarian/MaterialDesign#readme",
+  "homepage": "https://github.com/ramiroaisen/svelte-material-icons#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "npm-cli-login": "^0.1.1"
+    "cheerio": "^1.0.0-rc.3"
   }
 }

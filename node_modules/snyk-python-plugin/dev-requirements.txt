@@ -1,3 +1,0 @@
-pipenv
-virtualenv
-mock
