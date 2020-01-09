@@ -77,7 +77,7 @@ const filenames = fs.readdirSync(srcDir);
 console.log("Generating " + filenames.length + " components");
 
 for(let i = 0; i < filenames.length; i++){
-  process.stdout.clearLine();
+  //process.stdout.clearLine();
   process.stdout.cursorTo(0);
   process.stdout.write("Component" + ("" + (i + 1)).padStart(5, " ") + " / " + filenames.length);
 
