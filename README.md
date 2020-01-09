@@ -8,7 +8,7 @@ npm i svelte-material-icons
 ### Usage
 ```svelte
 <script>
-	import Check from "svelte-material-icons/Check.svelte"
+	import Check from "svelte-material-icons/Check.svelte";
 <script/>
 
 <Check {color} {size} {width} {height} {viewBox} />
@@ -32,8 +32,8 @@ check-outline => CheckOutline.svelte
   export let viewBox = "0 0 24 24";
 </script>
 
-<svg {width} {height} {viewBox}">
-	<path d="..." fill="{color}" />
+<svg {width} {height} {viewBox}>
+	<path d="..." fill={color} />
  </svg>
 ```
 
