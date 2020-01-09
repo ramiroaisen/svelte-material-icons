@@ -98,6 +98,11 @@ process.stdout.write("\n");
 
 // copy readme
 console.log("Copying README.md to npm package");
-fs.copyFileSync(__dirname + "/README.md", path.join(destDir, "README.md"));
+
+// npm does not support ```svelte so change it to ```html
+const readmeSrc = fs.readFileSync(__dirname + "/README.md", "utf8");
+const readme = readmeSrc.replace(/\`\`\`svelte/g, "```html");
+
+fs.writeFileSync(path.join(destDir, "README.md"), readme);
   
 console.log("Bye!");

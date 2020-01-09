@@ -1,6 +1,6 @@
 {
   "name": "svelte-material-icons",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Material Design Icons for Svelte",
   "main": "\"\"",
   "scripts": {
