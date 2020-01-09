@@ -1,0 +1,9 @@
+<script>
+  export let size = "1em";
+  export let width = size;
+  export let height = size;
+  export let color = "currentColor";
+  export let viewBox = "0 0 24 24";
+</script>
+
+<svg width="{width}" height="{height}" viewBox="{viewBox}"><path d="M9,7V17H11V13H13V17H15V7H13V11H11V7H9Z" fill="{color}"/></svg>
