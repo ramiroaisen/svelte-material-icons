@@ -1,6 +1,6 @@
 {
   "name": "svelte-material-icons-generator",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Svelte Material Design Icons Generator",
   "main": "build.js",
   "scripts": {
