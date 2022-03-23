@@ -38,8 +38,10 @@ Icon names are PascalCased from the original name in the site
 ```
 
 ### Notes
-If you wrap the icon into other element set the **display** of the parent element to **flex**
+If you wrap the icon into other element set the **display** of the parent element to **flex** to avoid extra whitespace
 
+### Types
+This package provides typescript definitions
 
 ### Contribute
 This is a simple source to source compiler that transforms the svg files from https://github.com/Templarian/MaterialDesign to svelte components using [cheerio](https://cheerio.js.org)
