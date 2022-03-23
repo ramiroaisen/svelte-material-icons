@@ -1,6 +1,6 @@
 {
   "name": "svelte-material-icons",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Material Design Icons for Svelte",
   "main": "\"\"",
   "scripts": {
@@ -11,15 +11,24 @@
     "url": "git+https://github.com/ramiroaisen/svelte-material-icons.git"
   },
   "keywords": [
-    "Svelte",
-    "Material",
-    "Design",
-    "Icons"
+    "svelte",
+    "material",
+    "design",
+    "icons",
+    "material design",
+    "material design icons",
+    "material icons",
+    "svelte material icons",
+    "svelte material design icons"
   ],
   "author": "ramiroaisen@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ramiroaisen/svelte-material-icons/issues"
   },
-  "homepage": "https://github.com/ramiroaisen/svelte-material-icons#readme"
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "homepage": "https://github.com/ramiroaisen/svelte-material-icons#readme",
+  "types": "./index.d.ts"
 }
