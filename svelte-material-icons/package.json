@@ -1,6 +1,6 @@
 {
   "name": "svelte-material-icons",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Material Design Icons for Svelte",
   "main": "\"\"",
   "scripts": {
@@ -29,5 +29,5 @@
   "peerDependencies": {
     "svelte": "^3.0.0"
   },
-  "homepage": "https://github.com/ramiroaisen/svelte-material-icons#readme",
+  "homepage": "https://github.com/ramiroaisen/svelte-material-icons#readme"
 }
