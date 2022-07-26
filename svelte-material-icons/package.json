@@ -30,5 +30,4 @@
     "svelte": "^3.0.0"
   },
   "homepage": "https://github.com/ramiroaisen/svelte-material-icons#readme",
-  "types": "./index.d.ts"
 }

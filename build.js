@@ -18,9 +18,11 @@ const template = fs.readFileSync(__dirname + "/template.svelte", "utf8");
 const srcDir = __dirname + "/MaterialDesign/svg";
 const destDir = __dirname + "/svelte-material-icons";
 
+const dtsSource = fs.readFileSync(path.join(__dirname, "/icon.d.ts"));
+
 const hyp = "-".charCodeAt(0);
 
-const generateComponentFilename = (svgName) => {
+const generateComponentFilename = (svgName, ext = ".svelte") => {
   let name = svgName.replace(".svg", "");
   let helper = "";
   
@@ -45,7 +47,7 @@ const generateComponentFilename = (svgName) => {
     upper = false;
   }
 
-  return helper + ".svelte";
+  return helper + ext;
 }
 
 const generateComponentSource = (file) => {
@@ -84,13 +86,17 @@ for(let i = 0; i < filenames.length; i++){
   const filename = filenames[i];
   const file = fs.readFileSync(path.join(srcDir, filename), "utf8");
 
-  const componentFilename = generateComponentFilename(filename);
+  const componentFilename = generateComponentFilename(filename, ".svelte");
   const componentSource = generateComponentSource(file);
   
+  const dtsFilename = componentFilename + ".d.ts";
+
   fs.writeFileSync(
     path.join(destDir, componentFilename),
     componentSource
   );
+
+  fs.writeFileSync(path.join(destDir, dtsFilename), dtsSource);
 
 }
 
