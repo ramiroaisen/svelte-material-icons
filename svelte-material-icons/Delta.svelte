@@ -6,4 +6,4 @@
   export let viewBox = "0 0 24 24";
 </script>
 
-<svg width="{width}" height="{height}" viewBox="{viewBox}"><path d="M12,7.77L18.39,18H5.61L12,7.77M12,4L2,20H22" fill="{color}"/></svg>
+<svg width="{width}" height="{height}" viewBox="{viewBox}" class="{$$props.class}"><path d="M12,7.77L18.39,18H5.61L12,7.77M12,4L2,20H22" fill="${color}"/></svg>
