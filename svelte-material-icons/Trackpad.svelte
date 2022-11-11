@@ -4,6 +4,7 @@
   export let height = size;
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
+  export let ariaHidden = false;
 </script>
 
-<svg width="{width}" height="{height}" viewBox="{viewBox}"><path d="M4,3H20A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5A2,2 0 0,1 4,3M4,5V13H20V5H4M4,19H11V15H4V19M20,19V15H13V19H20Z" fill="{color}"/></svg>
+<svg width="{width}" height="{height}" viewBox="{viewBox}" aria-hidden="{ariaHidden}"><path d="M4,3H20A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5A2,2 0 0,1 4,3M4,5V13H20V5H4M4,19H11V15H4V19M20,19V15H13V19H20Z" fill="{color}"/></svg>
