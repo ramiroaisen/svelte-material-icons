@@ -67,6 +67,9 @@ const generateComponentSource = (file) => {
   $svg.attr("height", "{height}");
   $svg.attr("viewBox", "{viewBox}");
 
+  // add desc
+  $svg.prepend("{#if desc}<desc>{desc}</desc>{/if}");
+
   const $path = $svg.find("> path");
   
   // add fill attr
