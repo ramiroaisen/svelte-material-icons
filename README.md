@@ -31,13 +31,13 @@ Icon names are PascalCased from the original name in the site
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
   export let class = undefined;
+  export let ariaLabel = undefined;
+  export let ariaHidden = false;
   export let desc = null;
   export let title = null;
-  export let ariaHidden = false;
-  export let ariaLabel = undefined;
 </script>
 
-<svg {class} {width} {height} {viewBox} aria-label={ariaLabel} aria-hidden={ariaHidden} aria-label={ariaLabel}>
+<svg {class} {width} {height} {viewBox} aria-label={ariaLabel} aria-hidden={ariaHidden}>
   {#if title} <title>{title}</title> {/if}
   {#if desc} <desc>{desc}</desc> {/if}
   <path d="..." fill={color} />
