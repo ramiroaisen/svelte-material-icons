@@ -11,7 +11,7 @@ npm i svelte-material-icons
   import Check from "svelte-material-icons/Check.svelte";
 </script>
 
-<Check {color} {size} {width} {height} {viewBox} {title} {desc} {class} {ariaHidden} />
+<Check {color} {size} {width} {height} {viewBox} {title} {desc} {class} {ariaHidden} {ariaLabel} />
 ```
 
 ### Search Icons
@@ -31,10 +31,10 @@ Icon names are PascalCased from the original name in the site
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
   export let class = undefined;
+  export let ariaLabel = undefined;
+  export let ariaHidden = false;
   export let desc = null;
   export let title = null;
-  export let ariaHidden = false;
-  export let ariaLabel = undefined;
 </script>
 
 <svg {class} {width} {height} {viewBox} aria-label={ariaLabel} aria-hidden={ariaHidden}>
