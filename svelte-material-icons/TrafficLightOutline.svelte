@@ -4,12 +4,12 @@
   export let height = size;
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
-  export let ariaLabel = undefined;
-  export let ariaHidden = false;
-  export let title = null;
-  export let desc = null;
+  export let ariaLabel = void 0;
+  export let ariaHidden = void 0;
+  export let title = void 0;
+  export let desc = void 0;
 
-  let className = undefined;
+  let className = void 0;
   export { className as class }
 </script>
 

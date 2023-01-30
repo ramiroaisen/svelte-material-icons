@@ -25,16 +25,17 @@ Icon names are PascalCased from the original name in the site
 ### Icon Example
 ```svelte
 <script>
-  export let size = "1em";
-  export let width = size;
-  export let height = size;
-  export let color = "currentColor";
-  export let viewBox = "0 0 24 24";
-  export let class = undefined;
-  export let ariaLabel = undefined;
-  export let ariaHidden = false;
-  export let desc = null;
-  export let title = null;
+  // all properties are optional
+  export let size = "1em"; // string | number
+  export let width = size; // string | number
+  export let height = size; // string | number
+  export let color = "currentColor"; // string
+  export let viewBox = "0 0 24 24"; // string
+  export let class = undefined; // string
+  export let ariaLabel = undefined; // string
+  export let ariaHidden = undefined; // boolean
+  export let desc = undefined; // string
+  export let title = undefined; // string
 </script>
 
 <svg {class} {width} {height} {viewBox} aria-label={ariaLabel} aria-hidden={ariaHidden}>
