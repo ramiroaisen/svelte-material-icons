@@ -67,6 +67,7 @@ const generateComponentSource = (file) => {
   $svg.attr("height", "{height}");
   $svg.attr("class", "{className}")
   $svg.attr("viewBox", "{viewBox}");
+  $svg.attr("aria-label", "{ariaLabel}");
   $svg.attr("aria-hidden", "{ariaHidden}");
   
   $svg.prepend("{#if title}<title>{title}</title>{/if}");
@@ -75,7 +76,7 @@ const generateComponentSource = (file) => {
   const $path = $svg.find("> path");
   
   // add fill attr
-  $path.attr("fill", "${color}");
+  $path.attr("fill", "{color}");
 
   return template.replace("%svg%", $.html($svg));
 }

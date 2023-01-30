@@ -4,6 +4,13 @@
   export let height = size;
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
+  export let ariaLabel = undefined;
+  export let ariaHidden = false;
+  export let title = null;
+  export let desc = null;
+
+  let className = undefined;
+  export { className as class }
 </script>
 
-<svg viewBox="{viewBox}" width="{width}" height="{height}"><path d="M20.84 22.73L22.11 21.46L2.39 1.73L1.11 3L5 6.89V14H11V16.59L6.79 20.79L8.21 22.21L11 19.41V22H13V19.41L15.79 22.21L17.21 20.79L13 16.59V14.89L20.84 22.73M7 12V8.89L10.11 12H7M8.2 5L5.2 2H20C20.55 2 21 2.45 21 3V4C21 4.55 20.55 5 20 5H19V14H17.2L15.2 12H17V5H8.2Z" fill="{color}"/></svg>
+<svg viewBox="{viewBox}" width="{width}" height="{height}" class="{className}" aria-label="{ariaLabel}" aria-hidden="{ariaHidden}">{#if desc}<desc>{desc}</desc>{/if}{#if title}<title>{title}</title>{/if}<path d="M20.84 22.73L22.11 21.46L2.39 1.73L1.11 3L5 6.89V14H11V16.59L6.79 20.79L8.21 22.21L11 19.41V22H13V19.41L15.79 22.21L17.21 20.79L13 16.59V14.89L20.84 22.73M7 12V8.89L10.11 12H7M8.2 5L5.2 2H20C20.55 2 21 2.45 21 3V4C21 4.55 20.55 5 20 5H19V14H17.2L15.2 12H17V5H8.2Z" fill="{color}"/></svg>
