@@ -11,7 +11,7 @@ npm i svelte-material-icons
   import Check from "svelte-material-icons/Check.svelte";
 </script>
 
-<Check {color} {size} {width} {height} {viewBox} {title} {desc} {class} {ariaHidden} />
+<Check {color} {size} {width} {height} {viewBox} {title} {desc} {class} {ariaHidden} {ariaLabel} />
 ```
 
 ### Search Icons
