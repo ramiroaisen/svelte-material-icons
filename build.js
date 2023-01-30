@@ -70,6 +70,9 @@ const generateComponentSource = (file) => {
   // add title
   $svg.prepend("{#if title}<title>{title}</title>{/if}");
 
+  // add desc
+  $svg.prepend("{#if desc}<desc>{desc}</desc>{/if}");
+
   const $path = $svg.find("> path");
   
   // add fill attr
