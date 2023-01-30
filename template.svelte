@@ -4,7 +4,8 @@
   export let height = size;
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
-  export let desc = undefined;
+  export let title = null;
+  export let desc = null;
 </script>
 
 %svg%
