@@ -37,7 +37,7 @@ Icon names are PascalCased from the original name in the site
   export let ariaLabel = undefined;
 </script>
 
-<svg {class} {width} {height} {viewBox} aria-label={ariaLabel} aria-hidden={ariaHidden}>
+<svg {class} {width} {height} {viewBox} aria-label={ariaLabel} aria-hidden={ariaHidden} aria-label={ariaLabel}>
   {#if title} <title>{title}</title> {/if}
   {#if desc} <desc>{desc}</desc> {/if}
   <path d="..." fill={color} />
