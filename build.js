@@ -12,7 +12,7 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const path = require("path");
 
-const allowedAttrs = ["width", "height", "viewBox"];
+const allowedAttrs = ["width", "height", "class", "viewBox"];
 const template = fs.readFileSync(__dirname + "/template.svelte", "utf8");
 
 const srcDir = __dirname + "/MaterialDesign/svg";
@@ -65,7 +65,13 @@ const generateComponentSource = (file) => {
   // Add attrs
   $svg.attr("width", "{width}");
   $svg.attr("height", "{height}");
+  $svg.attr("class", "{className}")
   $svg.attr("viewBox", "{viewBox}");
+  $svg.attr("aria-label", "{ariaLabel}");
+  $svg.attr("aria-hidden", "{ariaHidden}");
+  
+  $svg.prepend("{#if title}<title>{title}</title>{/if}");
+  $svg.prepend("{#if desc}<desc>{desc}</desc>{/if}");
 
   const $path = $svg.find("> path");
   
